@@ -1,0 +1,1130 @@
+
+// inport partials files
+@import "./partials/mixin";
+@import "./partials/variable";
+@import "./partials/reset";
+// google javascript login password V$*8z9d#bvVbSqM
+
+// navbar
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  width: 100%;
+  line-height: 7rem;
+  color: $textColor;
+  transition: all 0.5s ease;
+  padding: 0 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  &.sticky {
+    padding: 0 9rem;
+    line-height: 6rem;
+    background: $stickyBgColor;
+    box-shadow: $boxShadow;
+    border: none;
+  }
+  .logo {
+    a {
+      font-size: 5rem;
+      font-weight: 700;
+      color: $textColor;
+      &.sticky {
+        color: $textColor;
+      }
+    }
+  }
+  #check {
+    display: none;
+  }
+  label #open,
+  #cancel {
+    font-size: 2rem;
+    color: $textColor;
+    cursor: pointer;
+    position: relative;
+    display: none;
+    float: right;
+    line-height: 7rem;
+    margin: 0 2rem;
+  }
+  ul {
+    display: flex;
+    position: relative;
+    li {
+      display: inline-block;
+      position: relative;
+      a {
+        font-size: 1.6rem;
+        color: $textColor;
+        transition: all 0.5s ease;
+        text-transform: uppercase;
+        margin: 0 1.5rem;
+        position: relative;
+        padding: 0.5rem 0;
+        &.sticky {
+          color: $textColor;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 0.3rem;
+          width: 100%;
+          background-color: $textColor;
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 0.4s ease;
+        }
+        &:hover::before {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+    }
+  }
+}
+// nav.sticky {
+//     padding: 0 15rem;
+//     line-height: 6rem;
+//     background-color: $primaryColor;
+// }
+// nav.sticky .logo,
+// nav.sticky ul li a {
+//     color: $textColor;
+// }
+
+// banner section
+.banner {
+  background-color: transparent;
+  background-image: linear-gradient(67deg, #00d7ff 0%, #01064a 100%);
+  width: 100%;
+  height: 80rem;
+  .banner_wrapper {
+    position: relative;
+    top: 20rem;
+    .banner_title {
+      span {
+        font-size: 1.8rem;
+        color: $textColor;
+      }
+      h1 {
+        font-size: 7rem;
+        color: $textColor;
+      }
+      p {
+        font-size: 1.6rem;
+        color: $textColor;
+      }
+    }
+    .banner_btn {
+      position: relative;
+      top: 5rem;
+      .btn {
+        @include bannerBtn;
+        &::before {
+          @include bannerBefore;
+        }
+        &:hover::before {
+          left: 0;
+          z-index: -1;
+        }
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+  // banner right
+  .banner_img {
+    position: relative;
+    top: 10rem;
+  }
+}
+// how it work section
+.how_it_work_section{
+  padding: 10rem 0;
+  .how_it_work_section_title{
+    h1{
+      @include h1Title;
+      &::after{
+        @include h1After;
+      }
+    }
+    p{
+      @include psubTitle;
+    }
+  }
+  // work_section_wrapper
+  .work_section_wrapper{
+    background-color: $textColor;
+    padding: 4rem;
+    box-shadow: 0rem 0rem .5rem $primaryColor;
+    .work_section_icon{
+      span{
+        font-size: 4rem;
+        display: block;
+        color: $primaryColor;
+        margin-bottom: 2rem;
+      }
+    }
+    .work_section_title{
+      h2{
+        font-size: 3rem;
+        color: $pricBtnColor;
+        font-weight: 600;
+      }
+    }
+    .work_section_content{
+      p{
+        font-size: 1.6rem;
+        line-height: 1.7;
+        width: 100%;
+        color: $ptextColor;
+      }
+    }
+  }
+
+}
+// our_services_section
+.our_services_section{
+  padding: 10rem 0;
+//our_service_section_title
+  .our_service_section_title{
+    position: relative;
+    h1{
+      @include h1Title;
+      &::after{
+        @include h1After;
+      }
+    }
+    p{
+      @include psubTitle;
+    }
+  }
+
+
+  // services_section_wrapper
+  .services_section_wrapper{
+    background-color: $textColor;
+    text-align: center;
+    position: relative;
+    box-shadow: 0rem 0rem .5rem $primaryColor;
+    border: .1rem solid transparent;
+    padding: 7rem;
+    transition: all .5s ease;
+    &:hover{
+      box-shadow: none;
+      border: .1rem solid $servicesBoxShadow;
+      border-radius: .5rem;
+    }
+      &:hover .services_section_icon span{
+        background-color: $pricBtnColor;
+        color: $textColor;
+      }
+      &:hover .services_section_btn a{
+        background-color: $pricBtnColor;
+        color: $textColor;
+      }
+    .services_section_icon{
+      position: relative;
+      margin-bottom: 2rem;
+      span{
+        font-size: 3rem;
+        display: block;
+        width: 8rem;
+        height: 8rem;
+        line-height: 8rem;
+        border-radius: 5rem;
+        text-align: center;
+        background-color: $iconBgColor;
+        color: $pricBtnColor;
+        margin: 0 auto;
+        transition: all .5s ease;
+      }
+    }
+    .services_section_title{
+      h2{
+        font-size: 3rem;
+        color: $pricBtnColor;
+        font-weight: 600;
+        margin-bottom: 2rem;
+      }
+    }
+    .services_section_content{
+      p{
+        font-size: 1.6rem;
+        color: $ptextColor;
+        line-height: 1.7;
+      }
+    }
+    .services_section_btn{
+      position: relative;
+      top: 2rem;
+      a{
+        font-size: 1.6rem;
+        color: $pricBtnColor;
+        padding: 1.3rem 3rem;
+        border: .1rem solid $pricBtnColor;
+        border-radius: 5rem;
+        transition: all .5s ease;
+        &:span{
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+// pricing_plan_section
+.pricing_plan_section {
+  background-color: transparent;
+  background-image: linear-gradient(67deg, #00d7ff 0%, #01064a 100%);
+  width: 100%;
+  height: 80rem;
+  padding: 5rem 0;
+  // pricing title
+  .pricing_title {
+    h1 {
+      @include h1Title;
+      color: $textColor;
+        &::after{
+          @include h1After;
+      }
+    }
+    p {
+      @include psubTitle;
+      color: $textColor
+    }
+  }
+  // pricing wrapper
+  .pricing_wrapper {
+    background: $textColor;
+    padding: 5rem 0;
+    box-shadow: 0rem 0rem .5rem $secondaryColor;
+    text-align: center;
+    transition: all .5s ease;
+    &:hover .price_content_title h2{
+        color: $primaryColor;
+    }
+    .price_content_title {
+      span {
+        font-size: 1.6rem;
+        color: $ptextColor;
+        display: block;
+        margin-bottom: 1rem;
+      }
+      h2 {
+        font-size: 4.5rem;
+        color: $pricBtnColor;
+        transition: all .4s ease;
+        & sub{
+            font-size: 1.6rem;
+            color: $ptextColor;
+        }
+      }
+      p {
+        font-size: 1.6rem;
+        color: $ptextColor;
+        margin-bottom: 6rem;
+      }
+    }
+    // pricing content
+    .price_content {
+      p {
+        font-size: 1.6rem;
+        color: $ptextColor;
+        line-height: 2;
+      }
+    }
+    // pricing btn
+    .price_content_btn {
+        position: relative;
+        padding-top: 3rem;
+      .btn {
+        @include pricingBtn;
+        &::before{
+            @include pricingBefore;
+        }
+        &:hover::before {
+          left: 0;
+          z-index: -1;
+        }
+        &:hover {
+          color: $textColor;
+          border:none;
+        }
+      }
+    }
+  }
+}
+// privacy secton
+.privacy_section{
+    background-color: transparent;
+    background-image: linear-gradient(67deg, #00d7ff 0%, #01064a 100%);
+    width: 100%;
+    height: 80rem;
+    // privacy section left
+    .privacy_section_left{
+      position: relative;
+      top: 20rem;
+      .privacy_section_img{
+        img{
+
+        }
+      }
+    }
+    // privacy_section_right
+  .privacy_section_right{
+    position: relative;
+    top: 20rem;
+    .privacy_right_maintitle{
+      h1{
+        font-size: 5rem;
+        color: $textColor;
+        font-weight: 700;
+        margin-bottom: 3rem;
+        position: relative;
+        &::after{
+          content: "";
+          position: absolute;
+          top: -2rem;
+          left: 0rem;
+          width: 10rem;
+          border-top: .5rem solid $textColor;
+      }
+        }
+      }
+    }
+    .privacy_right_content{
+      p{
+        font-size: 1.6rem;
+        color: $textColor;
+        line-height: 1.7;
+        width: 80%;
+        margin-bottom: 5rem;
+      }
+    }
+    .privacy_right_wrapper{
+      display: flex;
+      align-items: center;
+      margin-bottom: 3rem;
+      .privacy_left_icon{
+        span{
+          font-size: 4rem;
+          display: block;
+          width: 10rem;
+          height: 10rem;
+          line-height: 10rem;
+          text-align: center;
+          background-color: $iconBgColor;
+          color: $pricBtnColor;
+          border-radius: 5rem;
+          margin: 0 2rem;
+        }
+      }
+      .privacy_right_title{
+        h2{
+          font-size: 3.5rem;
+          font-weight: 600;
+          color: $textColor;
+        }
+        p{
+          font-size: 1.6rem;
+          color: $textColor;
+          line-height: 1.7;
+          width: 80%;
+        }
+      }
+    }
+  }
+
+// services team section
+.services_team_section{
+  padding:10rem 0;
+  .services_team_title{
+    h1{
+      @include h1Title;
+      &::after{
+        @include h1After;
+      }
+    }
+    p{
+      @include psubTitle;
+    }
+  }
+  //team_section_wrapper
+  .team_section_wrapper{
+    background-color: $textColor;
+    padding: 5rem;
+    position: relative;
+    box-shadow: 0rem 0rem .5rem $pricBtnColor;
+    text-align: center;
+    border: .1rem solid transparent;
+    transition: all .5s ease;
+    &:hover{
+      box-shadow: none;
+      border: .1rem solid $servicesBoxShadow;
+    }
+    &:hover .team_section_title h3{
+      color: $primaryColor;
+    }
+      &:hover .team_section_icon ul li a{
+        background-color: $primaryColor;
+        color: $textColor;
+      }
+    .team_section_img{
+      img{
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      margin-bottom: 3rem;
+      border: .5rem solid $primaryColor;
+      }
+    }
+    .team_section_title{
+      h3{
+        font-size: 3rem;
+        font-weight: 600;
+        color: $pricBtnColor;
+        margin-bottom: 1rem;
+        transition: all .5s ease;
+      }
+    }
+    .team_section_content{
+      p{
+        font-size: 1.6rem;
+        color: $ptextColor;
+        margin-bottom: 2rem;
+      }
+    }
+    .team_section_icon{
+      ul{
+        display: flex;
+        li{
+          margin: 0 1rem;
+          a{
+            font-size: 1.6rem;
+            color: $primaryColor;
+            display: inline-block;
+            width: 5rem;
+            height: 5rem;
+            background-color: $iconBgColor;
+            border-radius: 5rem;
+            line-height: 5rem;
+            text-align: center;
+            transition: all .5s ease;
+          }
+        }
+      }
+    }
+  }
+}
+// customers_feetback_section
+.customers_feetback_section{
+    background-color: transparent;
+    background-image: linear-gradient(67deg,#01064a 0%, #00d7ff 100%);
+    width: 100%;
+    height: 70rem;
+    padding: 5rem 0;
+  // customers_feetback_title
+  .customers_feetback_title{
+    h1{
+      @include h1Title;
+      color: $textColor;
+      &::after{
+        @include h1After;
+      }
+    }
+    p{
+      @include psubTitle;
+      color: $textColor;
+    }
+  }
+  //customers_feetback_section_wrapper
+  .customers_feetback_section_wrapper{
+    padding: 5rem;
+    background-color: $textColor;
+    box-shadow: 0rem 0rem .5rem $pricBtnColor;
+    border: .1rem solid $servicesBoxShadow;
+    border-radius: .5rem;
+    .customers_section_content{
+      p{
+        font-size:1.6rem;
+        color: $ptextColor;
+        font-weight: 500;
+        margin-bottom: 3rem;
+      }
+    }
+  //customers_sub_section_wrapper
+  .customers_sub_section_wrapper{
+    .sub_customers_weapper{
+      display: flex;
+      align-items: center;
+      .sub_customers_img{
+        img{
+          width: inherit;
+          border-radius: 5rem;
+          margin-right: 1rem;
+          border: .2rem solid $primaryColor;
+        }
+      }
+      .sub_customers_img_content{
+        position: relative;
+        h4{
+          font-size: 2.5rem;
+          font-weight: 600;
+          color: $pricBtnColor;
+        }
+        p{
+          font-size: 1.6rem;
+          color: $ptextColor;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .sub_customers_icon{
+    span{
+      display: inline-block;
+      position: relative;
+      left: 16rem;
+      top: 2rem;
+      font-size: 1.5rem;
+      color: $iconColor;
+    }
+  }
+  }
+}
+
+// blog_section
+.blog_section{
+  padding: 10rem 0;
+  // blog_section_main_title
+  .blog_section_main_title{
+    h1{
+      @include h1Title;
+      &::after{
+        @include h1After;
+      }
+    }
+    p{
+      @include psubTitle;
+    }
+  }
+  //blog_section_wrapper
+  .blog_section_wrapper{
+    background-color: $textColor;
+    box-shadow: 0rem .1rem .4rem $pricBtnColor;
+    transition: all .5s ease;
+    // hover part
+    &:hover .blog_section_img_date span{
+      background: $primaryColor !important;
+      color: $textColor !important;
+    }
+    &:hover .blog_section_img_btn a {
+      background-color: $pricBtnColor;
+      color: $textColor !important;
+    }
+    // blog section img wrapper
+    .blog_section_img_wrapper{
+      padding: 3rem;
+        .blog_section_img{}
+    .blog_section_img_date{
+      position: relative;
+      span{
+        font-size: 1.6rem;
+        display: inline-block;
+        padding: 1.2rem 3rem;
+        background-color: $pricBtnColor;
+        color: $textColor;
+        border-radius: 5rem;
+        position: absolute;
+        top: -6rem;
+        left: 33%;
+        transition: all .5s ease;
+      }
+    }
+    .blog_section_img_title{
+      position: relative;
+      h5{
+        font-size: 2.5rem;
+        color: $pricBtnColor;
+        font-weight: 600;
+      }
+    }
+    .blog_section_img_content{
+      p{
+        font-size: 1.6rem;
+        color: $ptextColor;
+        font-weight: 500;
+        line-height: 1.6;
+      }
+    }
+    .blog_section_img_btn{
+      margin-top: 3rem;
+      a{
+        font-size: 1.6rem;
+        color: $pricBtnColor;
+        font-weight: 500;
+        display: inline-block;
+        border: .1rem solid $pricBtnColor;
+        padding: 1.2rem 3rem;
+        border-radius: 5rem;
+        transition: all .5s ease;
+      }
+    }
+    }
+  }
+}
+// footer_section
+.footer_section{
+    background-color: transparent;
+    background-image: linear-gradient(67deg,#01064a 0%, #00d7ff 100%);
+    width: 100%;
+    padding: 5rem 0;
+    //footer_wrapper
+    .footer_wrapper{
+      .footer_title{
+        .left{
+          margin-left: 1.8rem;
+        }
+        h6{
+          font-size: 2.5rem;
+          font-weight: 600;
+          color: $textColor;
+          margin-bottom: 2rem;
+        }
+      }
+      //footer_content
+      .footer_content{
+        ul{
+          li{
+            font-size: 1.6rem;
+            color: $textColor;
+            line-height: 2;
+            & span{
+              margin-right: 1rem;
+              font-size: 2rem;
+            }
+            a{
+              font-size: 1.6rem;
+              display: inline-block;
+              line-height: 2;
+              color: $textColor;
+              transition: all .5s ease;
+              &:hover{
+                margin-left: 2rem;
+              }
+            }
+          }
+        }
+      }
+      //footer_social
+      .footer_social{
+        ul{
+          display: flex;
+          li{
+            margin: 0 1rem;
+            a{
+              font-size: 1.6rem;
+              color: $pricBtnColor;
+              display: inline-block;
+              width: 5rem;
+              height: 5rem;
+              line-height: 5rem;
+              border-radius: 5rem;
+              text-align: center;
+              background-color: $iconBgColor;
+              transition: all .5s ease;
+              margin-left: -1rem;
+              &:hover{
+                background-color: $pricBtnColor;
+                color: $textColor;
+              }
+            }
+          }
+        }
+      }
+      //footer_blog_one
+      .footer_blog_one{
+        margin-bottom: 2rem;
+        span{
+          font-size: 1.6rem;
+          color: $pricBtnColor;
+          display: inline-block;
+          margin-bottom: 1rem;
+        }
+        h5{
+          font-size: 2rem;
+          color: $textColor;
+        }
+      }
+      //footer_blog_two
+      .footer_blog_two{
+        span{
+          font-size: 1.6rem;
+          color: $pricBtnColor;
+          display: inline-block;
+          margin-bottom: 1rem;
+        }
+        h5{
+          font-size: 2rem;
+          color: $textColor;
+        }
+      } 
+    }
+    //copy_right
+    .copy_right{
+      margin-top: 4rem;
+      p{
+        font-size: 1.6rem;
+        & b{
+          color: $pricBtnColor;
+        }
+      }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+// responsive
+@media screen and (max-width: 1200px) {
+  .navbar .logo {
+    font-size: 4rem;
+    line-height: 7rem;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .navbar {
+    padding: 0 15rem;
+  }
+  .navbar ul {
+    position: fixed;
+    top: 7rem;
+    left: -100%;
+    background-color: $subMenuBgColor;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  #check:checked ~ label #open {
+    display: none;
+  }
+  #check:checked ~ label #cancel {
+    display: block;
+  }
+  .navbar ul li {
+    display: block;
+    text-align: center;
+    margin: 2rem 0;
+    line-height: 5rem;
+  }
+  .navbar ul li a {
+    font-size: 1.7rem;
+  }
+
+  .navbar label #open {
+    display: block;
+    transition: all 0.3s ease;
+  }
+}
+@media screen and (max-width: 992px) {
+  // banner section
+  .banner .banner_img img {
+	display: none;
+}
+// work section
+.how_it_work_section .work_section_wrapper {
+	margin-bottom: 2rem;
+}
+.how_it_work_section .how_it_work_section_title h1::after {
+	left: 30rem;
+}
+.how_it_work_section .how_it_work_section_title p {
+	width: 80%;
+	margin: 0 auto;
+  margin-bottom: 4rem;
+}
+// privacy section
+.privacy_section {
+	height: 100rem;
+}
+.privacy_section_img img {
+	width: 75%;
+	margin-top: -18rem;
+}
+.privacy_section .privacy_section_right .privacy_right_maintitle h1 {
+	font-size: 4rem;
+	margin-bottom: 1rem;
+}
+.privacy_section .privacy_right_wrapper .privacy_left_icon span {
+	font-size: 3rem;
+	width: 9rem;
+	height: 9rem;
+	line-height: 9rem;
+}
+.privacy_section .privacy_right_content p {
+	font-size: 1.6rem;
+	width: 100%;
+	margin-bottom: 3rem;
+}
+.privacy_section .privacy_right_wrapper .privacy_right_title h2 {
+	font-size: 3rem;
+	
+}
+.privacy_section .privacy_right_wrapper .privacy_right_title p {
+	font-size: 1.6rem;
+	color: #fff;
+	line-height: 1.7;
+	width: 100%;
+}
+// services section
+.our_services_section .our_service_section_title h1::after {
+	content: "";
+	left: 30rem;
+}
+.our_services_section .our_service_section_title p {
+	width: 80%;
+	margin: 0 auto;
+  margin-bottom: 4rem;
+}
+.our_services_section .services_section_wrapper .services_section_title h2 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+}
+.our_services_section .services_section_wrapper {
+	background-color: #fff;
+	padding: 7rem;
+	margin-bottom: 2rem;
+}
+// pricing plan section
+.pricing_plan_section .pricing_title h1::after {
+	left: 30rem;
+}
+.pricing_plan_section .pricing_title p {
+	width: 80%;
+	margin: 0 auto;
+}
+.pricing_plan_section .pricing_wrapper {
+	padding: 5rem 0;
+	margin-bottom: 2rem;
+}
+.pricing_plan_section {
+	height: 125rem;
+	padding: 5rem 0;
+}
+// team section
+
+.services_team_section .services_team_title h1::after {
+	content: "";
+	left: 30rem;
+}
+.services_team_section .services_team_title p{
+  width: 80%;
+}
+.services_team_section .team_section_wrapper {
+	margin-bottom: 2rem;
+}
+.team_section_icon {
+	margin-left: -4rem;
+}
+// customers feetback section
+.customers_feetback_section .customers_feetback_title h1::after {
+	content: "";
+	left: 30rem;
+}
+.customers_feetback_section .customers_feetback_title p{
+  width: 80%;
+}
+// blog section
+.blog_section .blog_section_main_title h1::after {
+	content: "";
+	left: 30rem;
+}
+.blog_section .blog_section_main_title p{
+  width: 80%;
+}
+.blog_section .blog_section_wrapper {
+	margin-bottom: 2rem;
+}
+// footer section
+.footer_wrapper {
+	margin-bottom: 4rem;
+}
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 10rem;
+  }
+  .navbar .logo {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 7rem;
+  }
+  .navbar label #open,
+  #cancel {
+    font-size: 2rem;
+  }
+  .banner .banner_wrapper .banner_title h1 {
+    font-size: 5rem;
+}
+.banner .banner_wrapper .banner_btn .btn {
+    font-size: 1.4rem;
+    padding: 1.2rem 2rem;
+    color: #fff;
+    margin-top: -4rem;
+}
+.banner .banner_img {
+    position: relative;
+    top: 22rem;
+}
+//pricing section
+.pricing_plan_section .pricing_wrapper{
+    margin-bottom: 2rem;
+}
+// banner section
+.banner .banner_wrapper {
+	position: relative;
+	top: 30rem;
+}
+.banner .banner_wrapper .banner_title h1 {
+	font-size: 5rem;
+	margin-bottom: 2rem;
+}
+//work section
+.how_it_work_section .how_it_work_section_title h1::after {
+	left: 20rem !important;
+} 
+// services section
+.our_services_section .our_service_section_title h1::after {
+	content: "";
+	left: 20rem !important;
+}
+// pricing plan section
+.pricing_plan_section .pricing_title h1::after {
+	left: 20rem !important;
+}
+.services_team_section .services_team_title h1::after {
+	content: "";
+	left: 20rem !important;
+}
+.pricing_plan_section {
+	height: 180rem;
+	padding: 5rem 0;
+}
+// customers feetback section
+.customers_feetback_section .customers_feetback_title h1::after {
+	content: "";
+	left: 20rem !important;
+}
+// blog section
+.blog_section .blog_section_main_title h1::after {
+	content: "";
+	left: 20rem !important;
+}
+.team_section_icon {
+	margin-left: 0;
+}
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding: 0 4rem;
+  }
+  .navbar.sticky {
+	padding: 0 4rem;
+}
+.navbar .logo a {
+	font-size: 4.5rem;
+	font-weight: 600;
+}
+  //work section
+.how_it_work_section .how_it_work_section_title h1::after {
+	left: 15rem !important;
+} 
+.how_it_work_section .how_it_work_section_title h1{
+  font-size: 4rem;
+  font-weight: 600;
+}
+// services section
+.our_services_section .our_service_section_title h1::after {
+	content: "";
+	left: 15rem !important;
+}
+.our_services_section .our_service_section_title h1{
+  font-size: 4rem;
+  font-weight: 600;
+}
+  // pricing section
+  .pricing_plan_section .pricing_title h1::after {
+	left: 15rem !important;
+}
+  .pricing_plan_section .pricing_title h1{
+    font-size: 4rem;
+    font-weight: 600;
+  }
+// customers feetback section
+.customers_feetback_section .customers_feetback_title h1::after {
+	content: "";
+	left: 15rem !important;
+}
+.customers_feetback_section .customers_feetback_title h1{
+  font-size: 4rem;
+  font-weight: 600;
+}
+// blog section
+.blog_section .blog_section_main_title h1::after {
+	content: "";
+	left: 15rem !important;
+}
+.blog_section .blog_section_main_title h1{
+  font-size: 4rem;
+  font-weight: 600;
+}
+// services team section
+.services_team_section .services_team_title h1::after {
+	left: 15rem !important;
+}
+.services_team_section .services_team_title h1{
+  font-size: 4rem;
+  font-weight: 600;
+}
+.services_team_section .services_team_title p {
+	width: 100%;
+}
+// privacy ssectin
+.privacy_section .privacy_section_right .privacy_right_maintitle h1 {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+.privacy_section .privacy_right_wrapper .privacy_right_title h2 {
+	font-size: 2.2rem;
+}
+.privacy_section .privacy_section_right {
+	top: 30rem;
+}
+.privacy_section_img img {
+	width: 100%;
+}
+}

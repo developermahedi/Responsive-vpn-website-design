@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- animated css link -->
+     <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>MH VPN App- Bootstrap 5 and scss</title>
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- wow css link -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!-- orl carousel css link -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.green.css">
+    <!-- our css link -->
+    <link rel="stylesheet" href="./scss/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="#"><img class="img-fluid w-25" src="./assets/logo.png"> VPN</a></div>
+         <input type="checkbox" id="check">
+        <label for="check" id="mobial_menu_icon">
+                <i class="fas fa-bars"  id="open"></i>
+                <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+<!-- banner section -->
+<div class="banner banner_overly">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mx-auto">
+                <div class="banner_wrapper  wow animate__animated animate__slideInLeft animate__delay-.7s">
+                    <div class="banner_title">
+                        <span>VPN PROTECTION</span>
+                        <h1>Your Life Is Under Our Security</h1>
+                        <p>Strategies focused on increase ingenue private privacyand visibility of your business</p>
+                    </div>
+                    <div class="banner_btn">
+                        <a href="#" class="btn">get in now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mx-auto">
+                <div class="banner_img wow animate__animated animate__slideInRight animate__delay-.9s">
+                    <figure>
+                        <img class="img-fluid" src="./assets/banner_img_02-1.png" alt="banner">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- how it work -->
+<section class="how_it_work_section">
+    <div class="container">
+        <div class="how_it_work_section_title">
+            <h1>How it Work</h1>
+            <p>These speeds are excellent.It's rata that 'MHVPN' fast connection speeds across it's network </p>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mx-auto">
+                <div class="work_section_wrapper wow animate__animated animate__zoomIn animate__delay-.5s">
+                    <div class="work_section_icon">
+                        <span><i class="fas fa-cloud-download-alt"></i></span>
+                    </div>
+                    <div class="work_section_title">
+                        <h2>Easy Download</h2>
+                    </div>
+                    <div class="work_section_content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloremque unde reprehenderit deleniti adipisci officiis dolores, aperiam nemo est consectetur!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mx-auto">
+                <div class="work_section_wrapper wow animate__animated animate__zoomIn animate__delay-.7s">
+                    <div class="work_section_icon">
+                        <span><i class="fas fa-check"></i></span>
+                    </div>
+                    <div class="work_section_title">
+                        <h2>Insanet Setup</h2>
+                    </div>
+                    <div class="work_section_content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloremque unde reprehenderit deleniti adipisci officiis dolores, aperiam nemo est consectetur!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mx-auto">
+                <div class="work_section_wrapper wow animate__animated animate__zoomIn animate__delay-.9s">
+                    <div class="work_section_icon">
+                        <span><i class="fas fa-globe-asia"></i></span>
+                    </div>
+                    <div class="work_section_title">
+                        <h2>Enjoy Worldwide</h2>
+                    </div>
+                    <div class="work_section_content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloremque unde reprehenderit deleniti adipisci officiis dolores, aperiam nemo est consectetur!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- privacy section -->
+<section class="privacy_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mx-auto">
+                <div class="privacy_section_left wow animate__animated animate__slideInLeft animate__delay-.5s">
+                    <div class="privacy_section_img">
+                        <figure>
+                            <img class="img-fluid" src="./assets/about_img.png" alt="about img">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mx-auto">
+                <div class="privacy_section_right">
+                    <div class="privacy_right_maintitle">
+                        <h1>Yours Simple Solutions Online Privacy.</h1>
+                    </div>
+                    <div class="privacy_right_content">
+                         <p>These speeds are its excellent. It’s rare that a "dvpn" fast connection speeds across its network. Private Internet its Access is the leadings "dvpn" Service provider.</p>
+                    </div>
+                    <div class="privacy_right_wrapper d-flex">
+                        <div class="privacy_left_icon ">
+                            <span><i class="fas fa-chalkboard-teacher"></i></span>
+                        </div>
+                        <div class="privacy_right_title">
+                            <h2>Government User</h2>
+                            <p>Security providing you safety on the internet trice worldwide access in 47+ countries.</p>
+                        </div>
+                    </div>
+                    <div class="privacy_right_wrapper d-flex">
+                        <div class="privacy_left_icon">
+                            <span><i class="fas fa-clone"></i></span>
+                        </div>
+                        <div class="privacy_right_title">
+                            <h2>Hidden Hackers</h2>
+                            <p>Security providing you safety on the internet trice worldwide access in 47+ countries.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- our servics section -->
+<section class="our_services_section">
+    <div class="container">
+        <div class="our_service_section_title">
+            <h1>Valuable Sevices</h1>
+            <p>These speeds are excellent.It's rata that 'MHVPN' fast connection speeds across it's network </p>
+        </div>
+        <div class="row mb-5">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mx-auto">
+                <div class="services_section_wrapper wow animate__animated animate__zoomIn animate__delay-.5s">
+                    <div class="services_section_icon">
+                        <span><i class="fas fa-charging-station"></i></span>
+                    </div>
+                    <div class="services_section_title">
+                        <h2>Free Services</h2>
+                    </div>
+                    <div class="services_section_content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloremque unde reprehenderit deleniti adipisci officiis </p>
+                    </div>
+                    <div class="services_section_btn">
+                        <a href="#">Read More <span><i class="fas fa-arrow-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mx-auto">
+                <div class="services_section_wrapper wow animate__animated animate__zoomIn animate__delay-.6s">
+                    <div class="services_section_icon">
+                        <span><i class="fas fa-hand-holding-usd"></i></span>
+                    </div>
+                    <div class="services_section_title">
+                        <h2>Premium Services</h2>
+                    </div>
+                    <div class="services_section_content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloremque unde reprehenderit deleniti adipisci officiis </p>
+                    </div>
+                    <div class="services_section_btn">
+                        <a href="#">Read More <span><i class="fas fa-arrow-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mx-auto">
+                <div class="services_section_wrapper wow animate__animated animate__zoomIn animate__delay-.7s">
+                    <div class="services_section_icon">
+                        <span><i class="fas fa-archive"></i></span>
+                    </div>
+                    <div class="services_section_title">
+                        <h2>Gigabit Services</h2>
+                    </div>
+                    <div class="services_section_content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloremque unde reprehenderit deleniti adipisci officiis </p>
+                    </div>
+                    <div class="services_section_btn">
+                        <a href="#">Read More <span><i class="fas fa-arrow-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- second row start -->
+        <div class="row">
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mx-auto">
+                <div class="services_section_wrapper wow animate__animated animate__zoomIn animate__delay-.8s">
+                    <div class="services_section_icon">
+                        <span><i class="fas fa-download"></i></span>
+                    </div>
+                    <div class="services_section_title">
+                        <h2>Instant Setup</h2>
+                    </div>
+                    <div class="services_section_content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloremque unde reprehenderit deleniti adipisci officiis </p>
+                    </div>
+                    <div class="services_section_btn">
+                        <a href="#">Read More <span><i class="fas fa-arrow-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mx-auto">
+                <div class="services_section_wrapper wow animate__animated animate__zoomIn animate__delay-.9s">
+                    <div class="services_section_icon">
+                        <span><i class="fas fa-traffic-light"></i></span>
+                    </div>
+                    <div class="services_section_title">
+                        <h2>No Traffic Logs</h2>
+                    </div>
+                    <div class="services_section_content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloremque unde reprehenderit deleniti adipisci officiis </p>
+                    </div>
+                    <div class="services_section_btn">
+                        <a href="#">Read More <span><i class="fas fa-arrow-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 mx-auto">
+                <div class="services_section_wrapper wow animate__animated animate__zoomIn animate__delay-.10s">
+                    <div class="services_section_icon">
+                        <span><i class="fas fa-search-location"></i></span>
+                    </div>
+                    <div class="services_section_title">
+                        <h2>No Hidden Prics</h2>
+                    </div>
+                    <div class="services_section_content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloremque unde reprehenderit deleniti adipisci officiis </p>
+                    </div>
+                    <div class="services_section_btn">
+                        <a href="#">Read More <span><i class="fas fa-arrow-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- priceing plan section -->
+<section class="pricing_plan_section">
+    <div class="container">
+        <div class="pricing_title text-center py-5">
+            <h1>Pricing Plan</h1>
+            <p>These speeds are excellent. It’s rare that a "dvpn" fast connection speeds across its network.</p>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mx-auto">
+                <div class="pricing_wrapper wow animate__animated animate__zoomIn animate__delay-1.2s">
+                    <div class="price_content_title">
+                        <span>Monthly</span>
+                        <h2><sup>$</sup>3.66<sub>/MO</sub></h2>
+                        <p>save 42%</p>
+                    </div>
+                    <div class="price_content">
+                        <p> <del>$143.88</del> <b>$83.88</b></p> 
+                        <p>build payment every years</p>
+                        <p>24/7 active support</p>
+                    </div>
+                    <div class="price_content_btn">
+                        <a href="#" class="btn">get in now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mx-auto">
+                <div class="pricing_wrapper wow animate__animated animate__zoomIn animate__delay-1.3s">
+                    <div class="price_content_title">
+                        <span>Yearly</span>
+                        <h2><sup>$</sup>5.76<sub>/MO</sub></h2>
+                        <p>save 58%</p>
+                    </div>
+                    <div class="price_content">
+                        <p> <del>$143.88</del> <b>$83.88</b></p> 
+                        <p>build payment every years</p>
+                        <p>24/7 active support</p>
+                    </div>
+                    <div class="price_content_btn">
+                        <a href="#" class="btn">get in now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mx-auto">
+                <div class="pricing_wrapper wow animate__animated animate__zoomIn  animate__delay-1.5s">
+                    <div class="price_content_title">
+                        <span>Lifetime</span>
+                        <h2><sup>$</sup>9.77<sub>/MO</sub></h2>
+                        <p>save 45%</p>
+                    </div>
+                    <div class="price_content">
+                        <p> <del>$143.88</del> <b>$83.88</b></p> 
+                        <p>build payment every years</p>
+                        <p>24/7 active support</p>
+                    </div>
+                    <div class="price_content_btn">
+                        <a href="#" class="btn">get in now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- services team section -->
+<section class="services_team_section">
+    <div class="container">
+        <div class="services_team_title text-center py-5">
+            <h1>Services Team</h1>
+            <p>These speeds are excellent. It’s rare that a "dvpn" fast connection speeds across its network.</p>
+        </div>
+        <div class="row">
+           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mx-auto">
+               <div class="team_section_wrapper wow animate__animated animate__zoomIn  animate__delay-1.5s">
+                   <div class="team_section_img">
+                    <figure>
+                        <img class="img-fluid" src="./assets/team-01.png" alt="">
+                    </figure>
+                   </div>
+                   <div class="team_section_title">
+                       <h3>Adalynn</h3>
+                   </div>
+                   <div class="team_section_content">
+                       <p>Web Developer</p>
+                   </div>
+                   <div class="team_section_icon">
+                       <ul>
+                           <li><a href="#"><span><i class="fab fa-facebook"></i></span></a></li>
+                           <li><a href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+                           <li><a href="#"><span><i class="fab fa-instagram"></i></span></a></li>
+                           <li><a href="#"><span><i class="fab fa-linkedin-in"></i></span></a></li>
+                       </ul>
+                   </div>
+               </div>
+           </div> 
+           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mx-auto">
+               <div class="team_section_wrapper wow animate__animated animate__zoomIn  animate__delay-1.5s">
+                   <div class="team_section_img">
+                        <img class="img-fluid" src="./assets/team-02.png" alt="">
+                   </div>
+                   <div class="team_section_title">
+                       <h3>Cornish</h3>
+                   </div>
+                   <div class="team_section_content">
+                       <p>Graphic Designer</p>
+                   </div>
+                   <div class="team_section_icon">
+                       <ul>
+                           <li><a href="#"><span><i class="fab fa-facebook"></i></span></a></li>
+                           <li><a href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+                           <li><a href="#"><span><i class="fab fa-instagram"></i></span></a></li>
+                           <li><a href="#"><span><i class="fab fa-linkedin-in"></i></span></a></li>
+                       </ul>
+                   </div>
+               </div>
+           </div> 
+           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mx-auto">
+               <div class="team_section_wrapper wow animate__animated animate__zoomIn  animate__delay-1.5s">
+                   <div class="team_section_img">
+                        <img class="img-fluid" src="./assets/team-03.png" alt="">
+                   </div>
+                   <div class="team_section_title">
+                       <h3>Bulgarian</h3>
+                   </div>
+                   <div class="team_section_content">
+                       <p>Apps Developer</p>
+                   </div>
+                   <div class="team_section_icon">
+                       <ul>
+                           <li><a href="#"><span><i class="fab fa-facebook"></i></span></a></li>
+                           <li><a href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+                           <li><a href="#"><span><i class="fab fa-instagram"></i></span></a></li>
+                           <li><a href="#"><span><i class="fab fa-linkedin-in"></i></span></a></li>
+                       </ul>
+                   </div>
+               </div>
+           </div> 
+        </div>
+    </div>
+</section>
+
+<!-- customaers feetback section -->
+<section class="customers_feetback_section">
+    <div class="container">
+        <div class="customers_feetback_title text-center py-5">
+            <h1>Customers Feetback</h1>
+            <p>These speeds are excellent. It’s rare that a "dvpn" fast connection speeds across its network.</p>
+        </div>
+        <div class="row">
+            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 mx-auto">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="customers_feetback_section_wrapper">
+                            <div class="customers_section_content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque expedita quo quia architecto sit velit quibusdam quod ipsa  </p>
+                            </div>
+                            <div class="row">
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 mx-auto">
+                                <div class="customers_sub_section_wrapper">
+                                    <div class="sub_customers_weapper d-flex">
+                                        <div class="sub_customers_img">
+                                            <figure>
+                                                <img class="img-fluid" src="./assets/img1.jpg" alt="">
+                                            </figure>
+                                        </div>
+                                        <div class="sub_customers_img_content">
+                                            <h4>Williom Blake</h4>
+                                            <p>Co-Founder</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 mx-auto">
+                                <div class="sub_customers_icon">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                            </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="customers_feetback_section_wrapper">
+                            <div class="customers_section_content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque expedita quo quia architecto sit velit quibusdam quod ipsa </p>
+                            </div>
+                            <div class="row">
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 mx-auto">
+                                <div class="customers_sub_section_wrapper">
+                                    <div class="sub_customers_weapper d-flex">
+                                            <div class="sub_customers_img">
+                                                <figure>
+                                                    <img class="img-fluid" src="./assets/img2.jpg" alt="">
+                                                </figure>
+                                            </div>
+                                            <div class="sub_customers_img_content">
+                                                <h4>Lisa O'keeffe</h4>
+                                                <p>Graphic Designer</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 mx-auto">
+                                <div class="sub_customers_icon">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                            </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="customers_feetback_section_wrapper">
+                            <div class="customers_section_content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque expedita quo quia architecto sit velit quibusdam quod ipsa </p>
+                            </div>
+                            <div class="row">
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 mx-auto">
+                                <div class="customers_sub_section_wrapper">
+                                    <div class="sub_customers_weapper d-flex">
+                                            <div class="sub_customers_img">
+                                                <figure>
+                                                    <img class="img-fluid" src="./assets/img3.jpg" alt="">
+                                                </figure>
+                                            </div>
+                                            <div class="sub_customers_img_content">
+                                                <h4>Michael Nio</h4>
+                                                <p>Sineor Developer</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 mx-auto">
+                                <div class="sub_customers_icon">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                            </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="customers_feetback_section_wrapper">
+                            <div class="customers_section_content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque expedita quo quia architecto sit velit quibusdam quod ipsa </p>
+                            </div>
+                            <div class="row">
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 mx-auto">
+                                <div class="customers_sub_section_wrapper">
+                                    <div class="sub_customers_weapper d-flex">
+                                            <div class="sub_customers_img">
+                                                <figure>
+                                                    <img class="img-fluid" src="./assets/img2.jpg" alt="">
+                                                </figure>
+                                            </div>
+                                            <div class="sub_customers_img_content">
+                                                <h4>Ben Herowint</h4>
+                                                <p>CEO-Founder</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 mx-auto">
+                                <div class="sub_customers_icon">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                            </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- latests blgo section -->
+<section class="blog_section">
+    <div class="container">
+        <div class="blog_section_main_title text-center py-5">
+            <h1> Our Latests Blog</h1>
+            <p>These speeds are excellent. It’s rare that a "dvpn" fast connection speeds across its network.</p>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mx-auto">
+                <div class="blog_section_wrapper wow animate__animated animate__zoomIn  animate__delay-1.5s">
+                    <div class="blog_section_img">
+                        <figure>
+                            <img class="img-fluid" src="./assets/blog_img.png" alt="blog">
+                        </figure>
+                    </div>
+                    <div class="blog_section_img_wrapper">
+                    <div class="blog_section_img_date">
+                        <span>15 July 2021</span>
+                    </div>
+                    <div class="blog_section_img_title">
+                        <h5>Profesional Approach Security Proctecting</h5>
+                    </div>
+                    <div class="blog_section_img_content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda earum porro rem ex quos quo non vitae mollitia explicabo temporibus.</p>
+                    </div>
+                    <div class="blog_section_img_btn">
+                        <a href="#">Read More <span> <i class="fas fa-arrow-right"></i></span></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mx-auto">
+                <div class="blog_section_wrapper wow animate__animated animate__zoomIn  animate__delay-1.5s">
+                    <div class="blog_section_img">
+                        <figure>
+                            <img class="img-fluid" src="./assets/blog_img2.png" alt="blog">
+                        </figure>
+                    </div>
+                    <div class="blog_section_img_wrapper">
+                    <div class="blog_section_img_date">
+                        <span>20 July 2021</span>
+                    </div>
+                    <div class="blog_section_img_title">
+                        <h5>Profesional  Security Available to  Preseancs</h5>
+                    </div>
+                    <div class="blog_section_img_content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda earum porro rem ex quos quo non vitae mollitia explicabo temporibus.</p>
+                    </div>
+                    <div class="blog_section_img_btn">
+                        <a href="#">Read More <span> <i class="fas fa-arrow-right"></i></span></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mx-auto">
+                <div class="blog_section_wrapper wow animate__animated animate__zoomIn  animate__delay-1.5s">
+                    <div class="blog_section_img">
+                        <figure>
+                            <img class="img-fluid" src="./assets/blog_img.png" alt="blog">
+                        </figure>
+                    </div>
+                    <div class="blog_section_img_wrapper">
+                    <div class="blog_section_img_date">
+                        <span>25 July 2021</span>
+                    </div>
+                    <div class="blog_section_img_title">
+                        <h5>Profesional Approach Security Proctecting</h5>
+                    </div>
+                    <div class="blog_section_img_content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda earum porro rem ex quos quo non vitae mollitia explicabo temporibus.</p>
+                    </div>
+                    <div class="blog_section_img_btn">
+                        <a href="#">Read More <span> <i class="fas fa-arrow-right"></i></span></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- footer section -->
+<footer class="footer_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mx-auto">
+                <div class="footer_wrapper">
+                    <div class="footer_title">
+                        <h6 class="left">Address</h6>
+                    </div>
+                    <div class="footer_content">
+                        <ul>
+                            <li><span><i class="fas fa-map-signs"></i></span> 27 Division St. New York , NY 1002 United States Of America</li>
+                            <li><span><i class="far fa-envelope"></i></span> mhvpn@gmail.com</li>
+                            <li><span><i class="fas fa-phone-alt"></i></span> (303) 255 539</li>
+                        </ul>
+                    </div>
+                    <div class="footer_social">
+                        <ul>
+                            <li><a href="#"><span> <i class="fab fa-facebook-f"></i></span></a></li>
+                            <li><a href="#"><span> <i class="fab fa-twitter"></i></span></a></li>
+                            <li><a href="#"><span> <i class="fab fa-linkedin-in"></i></span></a></li>
+                            <li><a href="#"><span> <i class="fab fa-instagram"></i></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mx-auto">
+                <div class="footer_wrapper">
+                    <div class="footer_title">
+                        <h6 class="left">Services</h6>
+                    </div>
+                    <div class="footer_content">
+                        <ul>
+                            <li><a href="#">No traffic Lags</a></li>
+                            <li><a href="#">Instant Setup</a></li>
+                            <li><a href="#">Gigabit Services</a></li>
+                            <li><a href="#">Premium Services</a></li>
+                            <li><a href="#">Free Sevices</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mx-auto">
+                <div class="footer_wrapper">
+                    <div class="footer_title">
+                        <h6 class="left">Others Page</h6>
+                    </div>
+                    <div class="footer_content">
+                        <ul>
+                            <li><a href="#"> Home</a></li>
+                            <li><a href="#"> About</a></li>
+                            <li><a href="#"> Services</a></li>
+                            <li><a href="#"> Blgo</a></li>
+                            <li><a href="#"> Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mx-auto">
+                <div class="footer_wrapper">
+                    <div class="footer_title">
+                        <h6>Recent Articles</h6>
+                    </div>
+                    <div class="footer_blog_one">
+                        <span><strong><i class="far fa-calendar-alt"></i></strong> 27 july 2021</span>
+                        <h5>Profesional Approach Security Proctecting</h5>
+                    </div>
+                    <div class="footer_blog_two">
+                        <span> <strong><i class="far fa-calendar-alt"></i></strong> 29 july 2021</span>
+                        <h5>Profesional Security Available to Preseancs</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-xl-12 col-lg-12-col-md-6 col-sm-12 mx-auto">
+                <hr class=" text-white">
+                <div class="copy_right text-center text-white">
+                    <p>copyrighy &copy; 2021 | All Right Reserved By <b>Developer Mahedi</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- bootstrap js link -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- wow js link -->
+    <script src="./js/wow.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <!-- owl carousel js link -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- our js link -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

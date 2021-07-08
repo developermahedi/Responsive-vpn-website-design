@@ -1,0 +1,83 @@
+// banner btn design
+@mixin bannerBtn {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    background-image: $btnBgColor;
+    padding: 1.4rem 4rem;
+    color: $textColor;
+    display: inline-block;
+    border-radius: 5rem;
+    position: relative;
+    transition: all .5s ease;
+    z-index:1;
+    overflow: hidden;
+    font-weight: 600;
+}
+//banner btn before
+@mixin bannerBefore {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: $textColor;
+    color: $btnBgColor;
+    width: 100%;
+    height:100%;
+    border-radius:5rem;
+    transition: all .5s ease;
+}
+// Pricing btn design
+@mixin pricingBtn {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: $pricBtnColor;
+    padding: 1.2rem 3rem;
+    color: $textColor;
+    display: inline-block;
+    border-radius: 5rem;
+    position: relative;
+    transition: all .5s ease;
+    z-index:1;
+    overflow: hidden;
+    font-weight: 600;
+    border: none;
+}
+//banner btn before
+@mixin pricingBefore {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: $btnBgColor;
+    width: 100%;
+    height:100%;
+    border-radius:5rem;
+    transition: all .5s ease;
+}
+// h1 title after
+@mixin h1Title {
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: $h1TextColor;
+    position: relative;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+@mixin psubTitle {
+    font-size: 1.6rem;
+    color: $ptextColor;
+    width: 40%;
+    margin: 0 auto;
+    font-weight: 500;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+@mixin h1After {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    left: 60rem;
+    width: 10rem;
+    border-top: .5rem solid $primaryColor;
+}
